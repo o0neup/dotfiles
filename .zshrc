@@ -66,9 +66,8 @@ plugins=(
   docker
   scala
   extract
+  virtualenv
 )
-
-source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -103,11 +102,11 @@ alias edit='subl'
 alias pylint='pylint --output-format=colorized'
 alias codesearch='grep -inIEr --color=ALWAYS -C2'
 
-export PATH=/usr/local/bin:$PATH
-export PATH=/usr/local/sbin:$PATH
+export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 export PATH="/usr/local/opt/protobuf@2.6/bin:$PATH"
 export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
 
 # Python from homebrew /2.7.14
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
@@ -129,5 +128,14 @@ export LANG=en_US.UTF-8
 # ## The orginal version is saved in .bash_profile.pysave
 # #PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
 # #export PATH
+
+source $ZSH/oh-my-zsh.sh
+
+# powerline9k theme customization
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir virtualenv vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
+
+POWERLEVEL9K_VIRTUALENV_BACKGROUND='098'
+POWERLEVEL9K_VIRTUALENV_FOREGROUND='226'
 
 
