@@ -98,3 +98,36 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias less='less -FSRXc'
+alias edit='subl'
+alias pylint='pylint --output-format=colorized'
+alias codesearch='grep -inIEr --color=ALWAYS -C2'
+
+export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/sbin:$PATH
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+export PATH="/usr/local/opt/protobuf@2.6/bin:$PATH"
+export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
+
+# Python from homebrew /2.7.14
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/artemk/google-cloud-sdk/path.zsh.inc' ]; then source "${HOME}/google-cloud-sdk/path.zsh.inc"; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/artemk/google-cloud-sdk/completion.zsh.inc' ]; then source "${HOME}/google-cloud-sdk/completion.zsh.inc"; fi
+
+export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/site-packages
+
+export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+
+##Setting PATH for Python 3.4
+# ## The orginal version is saved in .bash_profile.pysave
+# #PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
+# #export PATH
+
+
