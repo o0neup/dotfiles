@@ -110,15 +110,12 @@ export PATH="/usr/local/opt/protobuf@2.6/bin:$PATH"
 export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 
-# Python from homebrew /2.7.14
-export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/artemk/google-cloud-sdk/path.zsh.inc' ]; then source "${HOME}/google-cloud-sdk/path.zsh.inc"; fi
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/artemk/google-cloud-sdk/completion.zsh.inc' ]; then source "${HOME}/google-cloud-sdk/completion.zsh.inc"; fi
-
-export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/site-packages
 
 export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 
