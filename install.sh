@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ##### CONFIG VARIABLES #####
-DOTFILES=(".vimrc" ".zshrc")
+DOTFILES=(".vimrc" ".zshrc" ".oh-my-zsh")
 DOTFILES_DIR="$(pwd)"
 
 ##### CONTROL VARIABLES #####
@@ -25,3 +25,4 @@ then
 else
   echo "Skipping gitconf setup"
 fi
+
