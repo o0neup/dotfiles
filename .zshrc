@@ -141,3 +141,7 @@ POWERLEVEL9K_VIRTUALENV_BACKGROUND='098'
 POWERLEVEL9K_VIRTUALENV_FOREGROUND='226'
 
 
+
+# Setup pyenv and pyenv-virtualenv
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
