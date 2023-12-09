@@ -36,6 +36,7 @@ plugins=(
   poetry
   gcloud
   tmux
+  rust
 )
 
 # Add homebrew to the path BEFORE the OMZ is inited
