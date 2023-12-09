@@ -38,6 +38,8 @@ plugins=(
   tmux
 )
 
+# Add homebrew to the path BEFORE the OMZ is inited
+export PATH=$HOME/bin:/usr/local/bin:/opt/homebrew/bin:$PATH
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
