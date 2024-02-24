@@ -71,6 +71,8 @@ alias less='less -FSRXc'
 alias pylint='pylint --output-format=colorized'
 alias codesearch='grep -inIEr --color=ALWAYS -C2'
 alias mvn_fmt="mvn com.spotify.fmt:fmt-maven-plugin:format"
+alias vim="nvim"
+alias ls="eza"
 
 # PATH amends
 export PATH="/usr/local/sbin:$PATH"
@@ -105,4 +107,4 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
 
 echo 'export FPATH="/opt/homebrew/bin/eza/completions/zsh:$FPATH"' >> ~/.zshrc
-alias vim="nvim"
+
